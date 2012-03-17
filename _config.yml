@@ -1,13 +1,6 @@
-
-# Jekyll Configuration
-
-source      : source
-destination : public
-plugins		: source/_plugins
-
 # Site Settings
 
-title       : My Site
+title       : My Secret Lair
 
 # Google Analytics Property ID
 # ganalytics  : UA-00000000-0
@@ -20,3 +13,12 @@ title       : My Site
 #     path    : /projects.html
 #   - name    : blog
 #     path    : /
+
+# Jekyll Configuration
+
+source      : source
+destination : public
+plugins		: source/_plugins
+
+# Jekyll-Lair Configuration
+

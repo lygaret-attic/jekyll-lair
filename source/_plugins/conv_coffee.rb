@@ -16,7 +16,7 @@ module Jekyll
     end
 
     def matches(ext)
-      ext =~ /#{@config['extension'].to_s}/io
+      ext =~ /\.#{@config[:extension].to_s}/io
     end
 
     def output_ext(ext)

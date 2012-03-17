@@ -66,8 +66,6 @@ Plus, where there's a will, there's a `git init`.
 
 	starts jekyll and a rackup server, making the site you're working on available at [http://localhost:9292/](http://localhost:9292/).
 	
-	additionally, starts up a [jasmine](https://github.com/pivotal/jasmine) server at [http://localhost:9292/_jasmine](http://localhost:9292/) for your javascript spec tests
-	
 	You can configure the preview server using the `_config.yml` file. In particular, see the `lair.preview` section.
 
 * `rake archive`
