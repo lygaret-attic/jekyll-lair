@@ -4,7 +4,7 @@ module Lair
   class Config
     @@lair_defaults = {
       "preview" => { "port" => 4500 },
-      "archive" => { "output" => "archive", "format" => "zip" },
+      "archive" => { "destination" => "archive.zip", "format" => "zip" },
       "generate" => {
         "page" => { "layout" => "default" },
         "post" => { "layout" => "post" }

@@ -20,5 +20,19 @@ source      : source
 destination : public
 plugins		: source/_plugins
 
+# Jekyll Preview Configuration
+
+baseurl     : /
+server_port : 4500
+
 # Jekyll-Lair Configuration
 
+lair:
+    generate:
+        page:
+            layout  : "default"
+            title   : "A New Page"
+        
+        post:
+            layout  : "post"
+            title   : "A New Post"

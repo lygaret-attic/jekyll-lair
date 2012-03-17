@@ -1,5 +1,3 @@
-*None of this works yet. I write readmes to guide development.*
-
 # jekyll-lair
 
 jekyll-lair is a template to use when you're starting out using [jekyll](http://jekyllrb.com) for a static website project. It's pretty opinionated, and may not be for everybody, but, seeing as how it provides almost no functionality of it's own, that's probably not a bad thing.
@@ -57,16 +55,16 @@ Plus, where there's a will, there's a `git init`.
 		
 4. ***Profit!***
 
-	Visit [http://localhost:9292/](http://localhost:9292/), and you should see the base 
+	Visit [http://localhost:4500/](http://localhost:4500/)
 
 
 ## Standard Rakefile targets
 
 * `rake preview`
 
-	starts jekyll and a rackup server, making the site you're working on available at [http://localhost:9292/](http://localhost:9292/).
+	starts jekyll, with the `auto` and `server`, making the site you're working on available at [http://localhost:9292/](http://localhost:9292/).
 	
-	You can configure the preview server using the `_config.yml` file. In particular, see the `lair.preview` section.
+	You can configure the preview server using the `_config.yml` file. See the section marked off as "Jekyll Preview Configuration".
 
 * `rake archive`
 
