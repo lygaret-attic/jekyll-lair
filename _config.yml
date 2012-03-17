@@ -1,0 +1,22 @@
+
+# Jekyll Configuration
+
+source      : source
+destination : public
+plugins		: source/_plugins
+
+# Site Settings
+
+title       : My Site
+
+# Google Analytics Property ID
+# ganalytics  : UA-00000000-0
+
+# Menu Include
+# menu:
+#   - name    : about
+#     path    : /about.html
+#   - name    : projects
+#     path    : /projects.html
+#   - name    : blog
+#     path    : /
