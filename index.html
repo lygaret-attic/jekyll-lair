@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Jekyll-lair by lygaret</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/lygaret/jekyll-lair">Fork On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/lygaret/jekyll-lair/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/lygaret/jekyll-lair/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Jekyll-lair</h1>
+          <p>A base setup for a Jekyll-powered project</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/lygaret">lygaret</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/#!/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>jekyll-lair</h1>
+
+<p>jekyll-lair is a template to use when you're starting out using <a href="http://jekyllrb.com">jekyll</a> for a static website project. It's pretty opinionated, and may not be for everybody, but, seeing as how it provides almost no functionality of it's own, that's probably not a bad thing.</p>
+
+<h2>What is it?</h2>
+
+<p>It's about 30 minutes worth of work that you don't have to do.</p>
+
+<p>jekyll-lair constists of a particular directory layout, a couple pre-included plugins (mostly from the list at the <a href="https://github.com/mojombo/jekyll/wiki/Plugins">jekyll project's wiki</a>), and a Rakefile to manage simple steps, like starting a preview server, etc, etc.</p>
+
+<p>Importantly, it's not a framework. It doesn't include base styles, a template switcher, any jquery plugins, yahoo widgets or google+ buttons. Where there are common pieces of markup that get used a lot (google analytics), they're included in the <code>_includes</code> directory, but not in the default layout.</p>
+
+<p>If you want something to build your blog off of, see the <a href="http://octopress.org">Octopress</a> project.</p>
+
+<h3>Opinions</h3>
+
+<p><em>All of these are really easy to change; they're included simply by plugins that are in by default and some Rake tasks.</em></p>
+
+<ul>
+<li>
+<a href="http://sass-lang.com/"><strong>scss</strong></a> for stylesheets</li>
+<li>
+<a href="http://coffeescript.org/"><strong>coffeescript</strong></a> for javascript</li>
+<li>
+<a href="http://pivotal.github.com/jasmine/"><strong>jasmine</strong></a> for BDD of javascript/coffeescript.</li>
+<li>the default layout is from <a href="http://html5boilerplate.com"><strong>HTML5 Boilerplate</strong></a>, and then cut way down. </li>
+</ul><h2>Why?</h2>
+
+<p>There's about seventeen steps I run through everytime I start out a new  project (usually static mockups). I'm tired of it. </p>
+
+<p>I use a standard markup base and a couple specific plugins in almost every project I run, so they're included here. A good number of them come from the various gists linked to in the <a href="https://github.com/mojombo/jekyll/wiki/Plugins">jekyll project's wiki page for plugins</a>. Credit is given where there's no explicit licence, and the license is included if there is. </p>
+
+<p><em>If I'm using a plugin you wrote and you'd rather I not be, please, let me know so I can pull it.</em></p>
+
+<h3>What about Octopress?</h3>
+
+<p>The <em>excellent</em> <a href="http://octopress.org">Octopress</a> project is great for running a blog, and if that's your goal, I'd highly recommend looking at it before using jekyll-lair. It feels way too heavy for something that's not a blog though, and most of my static projects end up pulling more than half of what's there.</p>
+
+<p>Plus, where there's a will, there's a <code>git init</code>.</p>
+
+<h2>Getting Started</h2>
+
+<ol>
+<li>
+<p><strong>Get the project into directory.</strong></p>
+
+<p>This isn't a project you clone. You can, if you'd like to contribute a fix for something (hint hint), but in general, this is a template you 
+You can download the <a href="https://github.com/lygaret/jekyll-lair/zipball/master">zipball</a>, or, from the commandline:</p>
+
+<pre><code>$ wget <a href="https://github.com/lygaret/jekyll-lair/tarball/master">https://github.com/lygaret/jekyll-lair/tarball/master</a> | tar -xz .
+</code></pre>
+</li>
+<li>
+<p><strong>Install required libraries.</strong></p>
+
+<pre><code>$ bundle install
+</code></pre>
+</li>
+<li>
+<p><strong>Run the preview server.</strong></p>
+
+<pre><code>$ rake preview
+</code></pre>
+</li>
+<li>
+<p><strong><em>Profit!</em></strong></p>
+
+<p>Visit <a href="http://localhost:4500/">http://localhost:4500/</a></p>
+</li>
+</ol><h2>Standard Rakefile targets</h2>
+
+<ul>
+<li>
+<p><code>rake config</code></p>
+
+<p>prints the current configuration from <code>_config.yml</code> and exits. Use this to see how your config file gets merged with the defaults.</p>
+</li>
+<li>
+<p><code>rake generate</code></p>
+
+<p>runs jekyll, with it's output going to <code>public</code>.</p>
+</li>
+<li>
+<p><code>rake preview</code></p>
+
+<p>starts jekyll, with the <code>auto</code> and <code>server</code>, making the site you're working on available at <a href="http://localhost:9292/">http://localhost:9292/</a>.</p>
+
+<p>You can configure the preview server using the <code>_config.yml</code> file. See the section marked off as "Jekyll Preview Configuration".</p>
+</li>
+<li>
+<p><code>rake archive</code></p>
+
+<p>generates an archive of the <code>_public</code> directory of the site, placing it at public_archive.tgz. </p>
+
+<p>To change the location where the archive is saved, or change the archive to be a zipfile rather than a tarball, change the <code>lair.archive</code> object in <code>_config.yml</code>.</p>
+</li>
+</ul>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+  </body>
+</html>
