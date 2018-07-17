@@ -17,7 +17,7 @@ If you want something to build your blog off of, see the [Octopress](http://octo
 
 * [**scss**](http://sass-lang.com/) for stylesheets
 * [**coffeescript**](http://coffeescript.org/) for javascript
-* [**jasmine**](http://pivotal.github.com/jasmine/) for BDD of javascript/coffeescript.
+* [**jasmine**](https://jasmine.github.io/) for BDD of javascript/coffeescript.
 * the default layout is from [**HTML5 Boilerplate**](http://html5boilerplate.com), and then cut way down. 
 
 
